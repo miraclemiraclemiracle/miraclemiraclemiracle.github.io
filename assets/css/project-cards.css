@@ -1,0 +1,77 @@
+/* Project Cards Styling */
+.project-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.project-links .btn {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.project-expand .expand-btn {
+  font-size: 0.8rem;
+  color: #007bff;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.project-expand .expand-btn:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.project-expand .expand-btn i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-expand .expand-btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.project-expand .collapse .card {
+  border: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+  font-size: 0.85rem;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .project-description {
+  color: #adb5bd;
+}
+
+[data-theme="dark"] .project-expand .collapse .card {
+  border-color: #495057;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-links {
+    justify-content: center;
+  }
+  
+  .project-links .btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}

@@ -1,0 +1,77 @@
+<div class="col">
+  <div class="card h-100 hoverable project-card">
+    {% if project.img %}
+      {%
+        include figure.liquid
+        loading="eager"
+        path=project.img
+        sizes = "250px"
+        alt="project thumbnail"
+        class="card-img-top"
+      %}
+    {% endif %}
+    <div class="card-body">
+      <h2 class="card-title">{{ project.title }}</h2>
+      <p class="card-text project-description">{{ project.description }}</p>
+      
+      <!-- External Links -->
+      <div class="project-links mb-2">
+        {% if project.arxiv_url %}
+          <a href="{{ project.arxiv_url }}" class="btn btn-sm btn-outline-primary me-1" target="_blank">
+            <i class="ai ai-arxiv"></i> arXiv
+          </a>
+        {% endif %}
+        {% if project.pdf_url %}
+          <a href="{{ project.pdf_url }}" class="btn btn-sm btn-outline-secondary me-1" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i> PDF
+          </a>
+        {% endif %}
+        {% if project.github_url %}
+          <a href="{{ project.github_url }}" class="btn btn-sm btn-outline-dark me-1" target="_blank">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        {% endif %}
+        {% if project.demo_url %}
+          <a href="{{ project.demo_url }}" class="btn btn-sm btn-outline-success me-1" target="_blank">
+            <i class="fa-solid fa-external-link-alt"></i> Demo
+          </a>
+        {% endif %}
+        {% if project.code_url %}
+          <a href="{{ project.code_url }}" class="btn btn-sm btn-outline-info me-1" target="_blank">
+            <i class="fa-solid fa-code"></i> Code
+          </a>
+        {% endif %}
+      </div>
+      
+      <!-- Expandable Details -->
+      <div class="project-expand">
+        <button class="btn btn-sm btn-link p-0 expand-btn" type="button" data-bs-toggle="collapse" data-bs-target="#project-{{ project.title | slugify }}" aria-expanded="false">
+          <i class="fa-solid fa-chevron-down"></i> 查看详情
+        </button>
+        <div class="collapse mt-2" id="project-{{ project.title | slugify }}">
+          <div class="card card-body">
+            <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="text-decoration-none">
+              <p class="mb-0">点击查看完整项目详情和技术实现...</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row ml-1 mr-1 p-0">
+        {% if project.github %}
+          <div class="github-icon">
+            <div class="icon" data-toggle="tooltip" title="Code Repository">
+              <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+            </div>
+            {% if project.github_stars %}
+              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                <i class="fa-solid fa-star"></i>
+                <span id="{{ project.github_stars }}-stars"></span>
+              </span>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
