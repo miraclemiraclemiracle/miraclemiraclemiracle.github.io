@@ -45,7 +45,7 @@
       
       <!-- Expandable Details -->
       <div class="project-expand">
-        <button class="btn btn-sm btn-link p-0 expand-btn" type="button" data-bs-toggle="collapse" data-bs-target="#project-{{ project.title | slugify }}" aria-expanded="false">
+        <button class="btn btn-sm btn-link p-0 expand-btn" type="button" data-toggle="collapse" data-target="#project-{{ project.title | slugify }}" aria-expanded="false">
           <i class="fa-solid fa-chevron-down"></i> 查看详情
         </button>
         <div class="collapse mt-2" id="project-{{ project.title | slugify }}">

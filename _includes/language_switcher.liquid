@@ -3,18 +3,20 @@
   {% assign current_lang = site.lang | default: 'zh' %}
   
   <div class="dropdown">
-    <button class="btn btn-sm dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      {% if current_lang == 'zh' %}
-        🇨🇳 中文
-      {% else %}
-        🇺🇸 English
-      {% endif %}
+    <button class="btn btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span id="current-lang-display">
+        {% if current_lang == 'zh' %}
+          🇨🇳 中文
+        {% else %}
+          🇺🇸 English
+        {% endif %}
+      </span>
     </button>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-      <a class="dropdown-item {% if current_lang == 'zh' %}active{% endif %}" href="#" onclick="switchLanguage('zh')">
+    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+      <a class="dropdown-item" href="#" onclick="switchLanguage('zh'); return false;">
         🇨🇳 中文
       </a>
-      <a class="dropdown-item {% if current_lang == 'en' %}active{% endif %}" href="#" onclick="switchLanguage('en')">
+      <a class="dropdown-item" href="#" onclick="switchLanguage('en'); return false;">
         🇺🇸 English
       </a>
     </div>
@@ -25,6 +27,16 @@
 function switchLanguage(lang) {
   // 保存语言选择到localStorage
   localStorage.setItem('preferred_language', lang);
+  
+  // 更新语言切换按钮显示
+  const langDisplay = document.getElementById('current-lang-display');
+  if (langDisplay) {
+    if (lang === 'zh') {
+      langDisplay.innerHTML = '🇨🇳 中文';
+    } else {
+      langDisplay.innerHTML = '🇺🇸 English';
+    }
+  }
   
   // 根据语言切换页面内容
   if (lang === 'en') {
@@ -51,13 +63,13 @@ function switchToChinese() {
   // 更新导航链接文本
   document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === '/') {
+    if (href === '/' || href.includes('about')) {
       link.textContent = '关于我';
-    } else if (href.includes('/publications/')) {
+    } else if (href.includes('publications')) {
       link.textContent = '研究与发表';
-    } else if (href.includes('/cv/')) {
+    } else if (href.includes('cv')) {
       link.textContent = '简历';
-    } else if (href.includes('/blog/')) {
+    } else if (href.includes('blog')) {
       link.textContent = '博客';
     }
   });
@@ -73,13 +85,13 @@ function switchToEnglish() {
   // 更新导航链接文本
   document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === '/') {
+    if (href === '/' || href.includes('about')) {
       link.textContent = 'About';
-    } else if (href.includes('/publications/')) {
+    } else if (href.includes('publications')) {
       link.textContent = 'Research & Publications';
-    } else if (href.includes('/cv/')) {
+    } else if (href.includes('cv')) {
       link.textContent = 'CV';
-    } else if (href.includes('/blog/')) {
+    } else if (href.includes('blog')) {
       link.textContent = 'Blog';
     }
   });
@@ -118,6 +130,23 @@ function updateAboutPage(lang) {
     const subtitle = document.querySelector('.subtitle, .description');
     if (subtitle) subtitle.textContent = chineseContent.subtitle;
     
+    // 更新页面标题
+    const pageTitle = document.querySelector('h1, .page-title');
+    if (pageTitle) pageTitle.textContent = '关于我';
+    
+    // 更新其他内容
+    const sections = document.querySelectorAll('h2, h3');
+    sections.forEach(section => {
+      const text = section.textContent.trim();
+      if (text.includes('Research') || text.includes('研究')) {
+        section.textContent = '研究兴趣';
+      } else if (text.includes('Education') || text.includes('教育')) {
+        section.textContent = '教育背景';
+      } else if (text.includes('Contact') || text.includes('联系')) {
+        section.textContent = '联系方式';
+      }
+    });
+    
   } else {
     // 英文版本内容
     const englishContent = {
@@ -131,6 +160,23 @@ function updateAboutPage(lang) {
     // 更新页面元素
     const subtitle = document.querySelector('.subtitle, .description');
     if (subtitle) subtitle.textContent = englishContent.subtitle;
+    
+    // 更新页面标题
+    const pageTitle = document.querySelector('h1, .page-title');
+    if (pageTitle) pageTitle.textContent = 'About Me';
+    
+    // 更新其他内容
+    const sections = document.querySelectorAll('h2, h3');
+    sections.forEach(section => {
+      const text = section.textContent.trim();
+      if (text.includes('Research') || text.includes('研究')) {
+        section.textContent = 'Research Interests';
+      } else if (text.includes('Education') || text.includes('教育')) {
+        section.textContent = 'Education';
+      } else if (text.includes('Contact') || text.includes('联系')) {
+        section.textContent = 'Contact';
+      }
+    });
   }
 }
 
@@ -138,8 +184,35 @@ function updatePublicationsPage(lang) {
   // 更新研究与发表页面内容
   if (lang === 'zh') {
     document.querySelector('h1, .page-title')?.textContent = '研究与发表';
+    
+    // 更新页面各部分标题
+    const sections = document.querySelectorAll('h2');
+    sections.forEach(section => {
+      const text = section.textContent.trim();
+      if (text.includes('Research') || text.includes('研究')) {
+        section.textContent = '研究项目';
+      } else if (text.includes('Publications') || text.includes('学术')) {
+        section.textContent = '学术论文';
+      } else if (text.includes('Google Scholar') || text.includes('谷歌学术')) {
+        section.textContent = '谷歌学术';
+      }
+    });
+    
   } else {
     document.querySelector('h1, .page-title')?.textContent = 'Research & Publications';
+    
+    // 更新页面各部分标题
+    const sections = document.querySelectorAll('h2');
+    sections.forEach(section => {
+      const text = section.textContent.trim();
+      if (text.includes('研究') || text.includes('Research')) {
+        section.textContent = 'Research Projects';
+      } else if (text.includes('学术') || text.includes('Publications')) {
+        section.textContent = 'Academic Publications';
+      } else if (text.includes('谷歌学术') || text.includes('Google Scholar')) {
+        section.textContent = 'Google Scholar';
+      }
+    });
   }
 }
 
@@ -147,8 +220,63 @@ function updateCVPage(lang) {
   // 更新简历页面内容
   if (lang === 'zh') {
     document.querySelector('h1, .page-title')?.textContent = '简历';
+    
+    // 更新简历各部分标题
+    const sections = document.querySelectorAll('h3.card-title');
+    sections.forEach(section => {
+      const text = section.textContent.trim().toLowerCase();
+      if (text.includes('basics') || text.includes('基本信息')) {
+        section.textContent = '基本信息';
+      } else if (text.includes('education') || text.includes('教育背景')) {
+        section.textContent = '教育背景';
+      } else if (text.includes('work') || text.includes('工作经历')) {
+        section.textContent = '工作经历';
+      } else if (text.includes('skills') || text.includes('技能')) {
+        section.textContent = '专业技能';
+      } else if (text.includes('publications') || text.includes('发表论文')) {
+        section.textContent = '发表论文';
+      } else if (text.includes('projects') || text.includes('项目经历')) {
+        section.textContent = '项目经历';
+      } else if (text.includes('awards') || text.includes('获奖情况')) {
+        section.textContent = '获奖情况';
+      } else if (text.includes('languages') || text.includes('语言能力')) {
+        section.textContent = '语言能力';
+      } else if (text.includes('interests') || text.includes('兴趣爱好')) {
+        section.textContent = '兴趣爱好';
+      } else if (text.includes('references') || text.includes('推荐人')) {
+        section.textContent = '推荐人';
+      }
+    });
+    
   } else {
     document.querySelector('h1, .page-title')?.textContent = 'Curriculum Vitae';
+    
+    // 更新简历各部分标题
+    const sections = document.querySelectorAll('h3.card-title');
+    sections.forEach(section => {
+      const text = section.textContent.trim();
+      if (text.includes('基本信息') || text.includes('basics')) {
+        section.textContent = 'Basics';
+      } else if (text.includes('教育背景') || text.includes('education')) {
+        section.textContent = 'Education';
+      } else if (text.includes('工作经历') || text.includes('work')) {
+        section.textContent = 'Work Experience';
+      } else if (text.includes('专业技能') || text.includes('skills')) {
+        section.textContent = 'Skills';
+      } else if (text.includes('发表论文') || text.includes('publications')) {
+        section.textContent = 'Publications';
+      } else if (text.includes('项目经历') || text.includes('projects')) {
+        section.textContent = 'Projects';
+      } else if (text.includes('获奖情况') || text.includes('awards')) {
+        section.textContent = 'Awards';
+      } else if (text.includes('语言能力') || text.includes('languages')) {
+        section.textContent = 'Languages';
+      } else if (text.includes('兴趣爱好') || text.includes('interests')) {
+        section.textContent = 'Interests';
+      } else if (text.includes('推荐人') || text.includes('references')) {
+        section.textContent = 'References';
+      }
+    });
   }
 }
 

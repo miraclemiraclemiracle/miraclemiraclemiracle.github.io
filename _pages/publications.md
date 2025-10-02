@@ -9,6 +9,16 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+
+
+## Google Scholar
+
+<p>
+  <a href="https://scholar.google.com/citations?user=example_scholar_id" target="_blank" rel="noopener noreferrer">
+    See the Google Scholar for the full list of my publications.
+  </a>
+</p>
+
 ## 研究项目
 
 <div class="projects">
@@ -28,11 +38,3 @@ nav_order: 2
 <div class="publications">
 {% bibliography %}
 </div>
-
-## Google Scholar
-
-<p>
-  <a href="https://scholar.google.com/citations?user=example_scholar_id" target="_blank" rel="noopener noreferrer">
-    See the Google Scholar for the full list of my publications.
-  </a>
-</p>
