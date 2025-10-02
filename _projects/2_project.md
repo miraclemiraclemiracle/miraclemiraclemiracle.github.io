@@ -1,24 +1,25 @@
 ---
 layout: project
-title: 智能对话系统优化研究
-description: 基于Transformer架构的智能对话系统性能优化与评估
+title: 大规模语言模型安全性研究
+description: 探索大语言模型的安全风险评估与防护机制，构建可信AI系统
 img: assets/img/3.jpg
 importance: 2
 category: research
-arxiv_url: https://arxiv.org/abs/2023.56789
-pdf_url: /assets/pdf/dialogue_optimization.pdf
-demo_url: https://demo.dialogue-system.com
+arxiv_url: https://arxiv.org/abs/2024.22345
+pdf_url: /assets/pdf/llm_safety_research.pdf
+github_url: https://github.com/liuyixuan/llm-safety
 ---
 
 ## 研究背景
 
-随着大语言模型的快速发展，智能对话系统在各个领域得到了广泛应用。本项目致力于提升对话系统的理解能力和生成质量，使其能够进行更自然、更有意义的人机交互。
+随着大语言模型在各个领域的广泛应用，其安全性和可信度成为了关键问题。本项目专注于识别和缓解大语言模型中的潜在风险，包括有害内容生成、偏见放大、隐私泄露等问题，致力于构建更安全、更可信的AI系统。
 
-### 技术创新
+### 核心研究内容
 
-- 设计了上下文感知的对话生成模型
-- 提出了多轮对话一致性保持机制
-- 开发了情感理解与表达模块
+- **安全风险评估框架**：建立了全面的大语言模型安全性评估体系
+- **对抗样本检测**：开发了高效的恶意输入识别与防护算法
+- **偏见缓解技术**：提出了减少模型输出偏见的训练和推理方法
+- **隐私保护机制**：设计了防止敏感信息泄露的技术方案
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

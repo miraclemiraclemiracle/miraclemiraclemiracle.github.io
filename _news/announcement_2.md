@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 获得国家自然科学基金青年项目资助
-date: 2024-01-10 14:30:00+0800
+date: 2024-11-20 14:30:00+0800
 inline: false
 related_posts: false
 ---

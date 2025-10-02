@@ -1,24 +1,32 @@
 ---
 layout: project
-title: 多模态信息融合技术研究
-description: 基于深度学习的多模态信息融合技术研究与应用
+title: 基于Transformer的多模态学习框架
+description: 构建统一的多模态预训练模型，实现视觉-语言理解的突破性进展
 img: assets/img/1.jpg
 importance: 1
 category: research
-arxiv_url: https://arxiv.org/abs/2023.12345
-pdf_url: /assets/pdf/multimodal_fusion.pdf
-github_url: https://github.com/username/multimodal-fusion
+arxiv_url: https://arxiv.org/abs/2024.11234
+pdf_url: /assets/pdf/transformer_multimodal.pdf
+github_url: https://github.com/liuyixuan/transformer-multimodal
 ---
 
 ## 项目概述
 
-本项目专注于多模态信息融合技术的研究，旨在通过深度学习方法实现文本、图像、音频等不同模态数据的有效整合与理解。该研究对于构建更智能的人机交互系统具有重要意义。
+本项目致力于构建基于Transformer架构的统一多模态学习框架，通过创新的注意力机制和预训练策略，实现视觉和语言信息的深度融合。该框架在图像描述生成、视觉问答、跨模态检索等任务上展现出卓越性能。
 
-### 主要贡献
+### 核心创新
 
-- 提出了一种新颖的跨模态注意力机制
-- 设计了高效的多模态特征融合网络
-- 在多个基准数据集上取得了最先进的性能
+- **统一编码器架构**：设计了可同时处理视觉和文本信息的Transformer编码器
+- **跨模态注意力机制**：提出了新颖的视觉-语言交互注意力计算方法
+- **大规模预训练策略**：开发了高效的多任务联合预训练框架
+- **零样本泛化能力**：模型在未见过的任务上展现出强大的泛化性能
+
+### 技术亮点
+
+本项目的核心技术包括：
+1. **多层次特征对齐**：在不同抽象层次上实现视觉和语言特征的精确对齐
+2. **动态注意力权重**：根据任务需求自适应调整不同模态的重要性
+3. **知识蒸馏优化**：通过教师-学生网络提升模型效率和性能
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
