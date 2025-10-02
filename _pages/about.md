@@ -13,8 +13,8 @@ profile:
     <p>地址：北京市海淀区学院路37号</p>
     <p>邮编：100191</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # 根据需求文档，首页不显示selected publications
+social: false # 根据需求文档，移除多余的社交媒体图标
 
 announcements:
   enabled: true # includes a list of news items
@@ -22,9 +22,7 @@ announcements:
   limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false # 首页不显示博客文章
 
 # 访客地图
 clustrmaps:

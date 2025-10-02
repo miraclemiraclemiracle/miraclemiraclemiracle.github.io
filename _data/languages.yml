@@ -1,0 +1,10 @@
+# 语言配置文件
+zh:
+  name: "中文"
+  code: "zh"
+  flag: "🇨🇳"
+  
+en:
+  name: "English"
+  code: "en"
+  flag: "🇺🇸"

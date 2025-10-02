@@ -1,0 +1,214 @@
+<!-- 语言切换器 -->
+<div class="language-switcher">
+  {% assign current_lang = site.lang | default: 'zh' %}
+  
+  <div class="dropdown">
+    <button class="btn btn-sm dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {% if current_lang == 'zh' %}
+        🇨🇳 中文
+      {% else %}
+        🇺🇸 English
+      {% endif %}
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+      <a class="dropdown-item {% if current_lang == 'zh' %}active{% endif %}" href="#" onclick="switchLanguage('zh')">
+        🇨🇳 中文
+      </a>
+      <a class="dropdown-item {% if current_lang == 'en' %}active{% endif %}" href="#" onclick="switchLanguage('en')">
+        🇺🇸 English
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchLanguage(lang) {
+  // 保存语言选择到localStorage
+  localStorage.setItem('preferred_language', lang);
+  
+  // 根据语言切换页面内容
+  if (lang === 'en') {
+    // 切换到英文版本
+    switchToEnglish();
+  } else {
+    // 切换到中文版本
+    switchToChinese();
+  }
+}
+
+function switchToChinese() {
+  // 更新页面标题和导航
+  document.title = '刘艺轩的学术主页';
+  
+  // 更新导航栏
+  const navItems = {
+    'about': '关于我',
+    'publications': '研究与发表',
+    'cv': '简历',
+    'blog': '博客'
+  };
+  
+  // 更新导航链接文本
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === '/') {
+      link.textContent = '关于我';
+    } else if (href.includes('/publications/')) {
+      link.textContent = '研究与发表';
+    } else if (href.includes('/cv/')) {
+      link.textContent = '简历';
+    } else if (href.includes('/blog/')) {
+      link.textContent = '博客';
+    }
+  });
+  
+  // 更新页面内容
+  updatePageContent('zh');
+}
+
+function switchToEnglish() {
+  // 更新页面标题和导航
+  document.title = 'Yixuan Liu\'s Academic Homepage';
+  
+  // 更新导航链接文本
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === '/') {
+      link.textContent = 'About';
+    } else if (href.includes('/publications/')) {
+      link.textContent = 'Research & Publications';
+    } else if (href.includes('/cv/')) {
+      link.textContent = 'CV';
+    } else if (href.includes('/blog/')) {
+      link.textContent = 'Blog';
+    }
+  });
+  
+  // 更新页面内容
+  updatePageContent('en');
+}
+
+function updatePageContent(lang) {
+  // 根据当前页面和语言更新内容
+  const currentPath = window.location.pathname;
+  
+  if (currentPath === '/' || currentPath.includes('about')) {
+    updateAboutPage(lang);
+  } else if (currentPath.includes('publications')) {
+    updatePublicationsPage(lang);
+  } else if (currentPath.includes('cv')) {
+    updateCVPage(lang);
+  } else if (currentPath.includes('blog')) {
+    updateBlogPage(lang);
+  }
+}
+
+function updateAboutPage(lang) {
+  if (lang === 'zh') {
+    // 中文版本内容
+    const chineseContent = {
+      subtitle: '计算机科学与人工智能研究者',
+      intro: '欢迎来到我的学术主页！我是刘艺轩，目前专注于计算机科学与人工智能领域的研究。',
+      research_interests: '研究兴趣',
+      education: '教育背景',
+      contact: '联系方式'
+    };
+    
+    // 更新页面元素
+    const subtitle = document.querySelector('.subtitle, .description');
+    if (subtitle) subtitle.textContent = chineseContent.subtitle;
+    
+  } else {
+    // 英文版本内容
+    const englishContent = {
+      subtitle: 'Computer Science & AI Researcher',
+      intro: 'Welcome to my academic homepage! I am Yixuan Liu, currently focusing on research in computer science and artificial intelligence.',
+      research_interests: 'Research Interests',
+      education: 'Education',
+      contact: 'Contact'
+    };
+    
+    // 更新页面元素
+    const subtitle = document.querySelector('.subtitle, .description');
+    if (subtitle) subtitle.textContent = englishContent.subtitle;
+  }
+}
+
+function updatePublicationsPage(lang) {
+  // 更新研究与发表页面内容
+  if (lang === 'zh') {
+    document.querySelector('h1, .page-title')?.textContent = '研究与发表';
+  } else {
+    document.querySelector('h1, .page-title')?.textContent = 'Research & Publications';
+  }
+}
+
+function updateCVPage(lang) {
+  // 更新简历页面内容
+  if (lang === 'zh') {
+    document.querySelector('h1, .page-title')?.textContent = '简历';
+  } else {
+    document.querySelector('h1, .page-title')?.textContent = 'Curriculum Vitae';
+  }
+}
+
+function updateBlogPage(lang) {
+  // 更新博客页面内容
+  if (lang === 'zh') {
+    document.querySelector('h1, .page-title')?.textContent = '博客';
+  } else {
+    document.querySelector('h1, .page-title')?.textContent = 'Blog';
+  }
+}
+
+// 页面加载时检查保存的语言偏好
+document.addEventListener('DOMContentLoaded', function() {
+  const savedLang = localStorage.getItem('preferred_language') || 'zh';
+  if (savedLang === 'en') {
+    switchToEnglish();
+  } else {
+    switchToChinese();
+  }
+});
+</script>
+
+<style>
+.language-switcher {
+  margin-left: 10px;
+}
+
+.language-switcher .btn {
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.language-switcher .btn:hover {
+  background: var(--global-hover-color);
+  color: var(--global-hover-text-color);
+}
+
+.language-switcher .dropdown-menu {
+  min-width: 120px;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-bg-color);
+}
+
+.language-switcher .dropdown-item {
+  color: var(--global-text-color);
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.language-switcher .dropdown-item:hover {
+  background: var(--global-hover-color);
+  color: var(--global-hover-text-color);
+}
+
+.language-switcher .dropdown-item.active {
+  background: var(--global-theme-color);
+  color: white;
+}
+</style>

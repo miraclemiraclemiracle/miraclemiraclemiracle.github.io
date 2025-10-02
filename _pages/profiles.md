@@ -1,11 +1,11 @@
 ---
-layout: profiles
-permalink: /people/
+layout: page
+permalink: /profiles/
 title: people
 description: members of the lab or group
-nav: true
+nav: false # 根据需求文档，移除people页面
 nav_order: 7
-
+---
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
