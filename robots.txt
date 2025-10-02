@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://miraclemiraclemiracle.github.io/sitemap.xml
+Sitemap: https://liuyixuan.github.io/sitemap.xml
