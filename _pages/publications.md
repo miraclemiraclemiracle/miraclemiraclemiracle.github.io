@@ -10,8 +10,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 ## Projects
-<p class="text-muted">Undergraduate research projects</p>
-
+<!-- 已隐藏 Undergraduate research projects -->
 <div class="projects">
   {% assign sorted_projects = site.projects | sort: "importance" %}
   <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-2{% endunless %}">
