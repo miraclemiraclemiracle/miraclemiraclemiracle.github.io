@@ -1,10 +1,10 @@
 ---
 layout: project
-title: 基于Transformer的多模态学习框架
-description: 构建统一的多模态预训练模型，实现视觉-语言理解的突破性进展
+title: Coherency Analysis in Nonlinear Heterogeneous Power Networks
+description: A novel theoretical analysis of <span class="clickable-term" data-title="Power System Coherency" data-definition="Power system coherency refers to the phenomenon where groups of generators in a power system swing together in response to disturbances, maintaining synchronized operation. This concept is crucial for understanding system stability and designing effective control strategies.">power system coherency</span>. Reveals the key mechanisms underpinning this phenomenon, laying foundations for <span class="clickable-term" data-title="Model Reduction" data-definition="Model reduction is a mathematical technique used to simplify complex power system models while preserving their essential dynamic characteristics. This approach enables faster simulations and more efficient control design for large-scale power networks.">model reduction</span> and further control design.
 img: assets/img/1.jpg
-importance: 1
-category: research
+importance: 1        # 控制项目在作品集页面中的排序，数值越大越靠前
+category: research  # 指定项目所属分类，用于作品集页面的分组展示
 arxiv_url: https://arxiv.org/abs/2024.11234
 pdf_url: /assets/pdf/transformer_multimodal.pdf
 github_url: https://github.com/liuyixuan/transformer-multimodal
