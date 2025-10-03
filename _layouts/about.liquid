@@ -77,12 +77,14 @@ layout: default
     {% if page.clustrmaps and page.clustrmaps.enabled %}
       <h2>访客地图</h2>
       <div class="clustrmaps-widget" style="text-align: center; margin: 20px 0;">
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d={{ page.clustrmaps.id }}&cl=ffffff&w=a"></script>
-        <noscript>
-          <a href="https://clustrmaps.com/site/{{ page.clustrmaps.id }}">
-            <img src="//www.clustrmaps.com/map_v2.png?d={{ page.clustrmaps.id }}&cl=ffffff" style="border:0px;" alt="访客地图" />
-          </a>
-        </noscript>
+        <a href="https://clustrmaps.com/site/{{ page.clustrmaps.id }}" target="_blank" title="访问详细访客地图">
+          <img src="//www.clustrmaps.com/map_v2.png?d={{ page.clustrmaps.id }}&cl=ffffff" 
+               style="border:0px; max-width: 300px; height: auto; cursor: pointer;" 
+               alt="访客地图缩略图" />
+        </a>
+        <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+          点击查看详细访客统计
+        </p>
       </div>
     {% endif %}
 

@@ -27,7 +27,7 @@ latest_posts:
 # 访客地图
 clustrmaps:
   enabled: true
-  id: "clustrmaps-widget" # ClustrMaps widget ID
+  id: "1c1nr" # ClustrMaps widget ID
 ---
 
 ## About Me
