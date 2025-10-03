@@ -9,6 +9,8 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+See the [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=6DSyKpEAAAAJ) for the full list of my publications.
+
 ## Projects
 <!-- 已隐藏 Undergraduate research projects -->
 <div class="projects">
@@ -26,7 +28,7 @@ nav_order: 2
   </div>
 </div>
 
-## 学术论文
+## Publications
 
 <!-- Bibsearch Feature -->
 {% include bib_search.liquid %}

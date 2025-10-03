@@ -1,138 +1,52 @@
 ---
 ---
 
-@string{aaai = {Association for the Advancement of Artificial Intelligence}}
-@string{neurips = {Advances in Neural Information Processing Systems}}
-@string{icml = {International Conference on Machine Learning}}
+@string{EJOR = {European Journal of Operational Research}}
+@string{YAC = {Youth Academic Annual Conference of Chinese Association of Automation}}
 
-@article{liu2024transformer,
-  abbr={AAAI},
-  bibtex_show={true},
-  title={基于Transformer的多模态学习方法研究},
-  author={刘艺轩 and 张三 and 李四},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={39},
-  pages={1234--1242},
+
+@article{liu2025coherency,
+  bibtex_show={false},
+  title={Coherency Analysis in Nonlinear Heterogeneous Power Networks: A Blended Dynamics Approach},
+  author={Yixuan Liu and Yingzhu Liu and Pengcheng You},
   year={2025},
-  publisher=aaai,
-  doi={10.1609/aaai.v39i1.12345},
-  arxiv={2024.11234},
-  pdf={transformer_multimodal.pdf},
-  code={https://github.com/liuyixuan/transformer-multimodal},
   selected={true},
-  abstract={本文提出了一种基于Transformer架构的统一多模态学习框架，通过创新的注意力机制实现视觉和语言信息的深度融合。实验结果表明，该方法在多个基准数据集上取得了最先进的性能。}
+  journal = {Under Review},
+  preview={homepage_pub_coherency.png}
 }
 
-@article{liu2024safety,
-  abbr={NeurIPS},
+@article{WANG2025,
+abbr={EJOR},
+preview={homepage_reusable.png},
+bibtex_show={true},
+title = {Reinforcement Learning Algorithm for Reusable Resource Allocation with Unknown Rental Time Distribution},
+journal = {European Journal of Operational Research},
+year = {2025},
+issn = {0377-2217},
+doi = {https://doi.org/10.1016/j.ejor.2025.09.012},
+url = {https://www.sciencedirect.com/science/article/pii/S0377221725007295},
+author = {Ziwei Wang and Jie Song and Yixuan Liu and Jingtong Zhao},
+pdf = {reusable_ssrn.pdf},
+selected = {true},
+keywords = {Reusable resources, Online resource allocation, Episodic reinforcement learning, Markov decision process},
+abstract = {We explore a scenario where a platform must decide on the price and type of reusable resources for sequentially arriving customers. The product is rented for a random period, during which the platform also extracts rewards based on a prearranged agreement. The expected reward varies during the usage time, and the platform aims to maximize revenue over a finite horizon. Two primary challenges are encountered: the stochastic usage time introduces uncertainty, affecting product availability, and the platform lacks initial knowledge about reward and usage time distributions. In contrast to conventional online learning, where usage time distributions are parametric, our problem allows for unknown distribution types. To overcome these challenges, we formulate the problem as a Markov decision process and model the usage time distribution using a hazard rate. We first introduce a greedy policy in the full-information setting with a provable 1/2-approximation ratio. We then develop a reinforcement learning algorithm to implement this policy when the parameters are unknown, allowing for non-parametric distributions and time-varying rewards. We further prove that the algorithm achieves sublinear regret against the greedy policy. Numerical experiments on synthetic data as well as a real dataset from TikTok demonstrate the effectiveness of our method.}
+}
+
+@INPROCEEDINGS{Gao2024,
+  abbr = {YAC},
+  preview = {homepage_Lyapunov_slower.gif},
   bibtex_show={true},
-  title={Large Language Model Safety: A Comprehensive Framework for Risk Assessment and Mitigation},
-  author={刘艺轩 and 王五 and 赵六},
-  journal={Advances in Neural Information Processing Systems},
-  volume={37},
-  pages={5678--5690},
+  author={Kekun Gao and Yuejun Yan and Yixuan Liu and Endong Liu and Pengcheng You},
+  booktitle={2024 39th Youth Academic Annual Conference of Chinese Association of Automation (YAC)}, 
+  title={Online Electricity Purchase for Data Center with Dynamic Virtual Battery from Flexibility Aggregation}, 
   year={2024},
-  publisher=neurips,
-  arxiv={2024.22345},
-  pdf={llm_safety_research.pdf},
-  code={https://github.com/liuyixuan/llm-safety},
-  selected={true},
-  abstract={We present a comprehensive framework for assessing and mitigating safety risks in large language models, addressing issues such as harmful content generation, bias amplification, and privacy leakage.}
-}
+  volume={},
+  number={},
+  pages={2170-2175},
+  keywords={Procurement;Data centers;Renewable energy sources;Costs;Uncertainty;Electricity;Heuristic algorithms},
+  pdf = {homepage_Lyapunov.pdf},
+  selected = {true},
+  doi={10.1109/YAC63405.2024.10598509},
+  abstract = {As a critical component of modern infrastructure, data centers account for a huge amount of power consumption and greenhouse gas emission. This paper studies the electricity purchase strategy for a data center to lower its energy cost while integrating local renewable generation under uncertainty. To facilitate efficient and scalable decision-making, we propose a two-layer hierarchy where the lower layer consists of the operation of all electrical equipment in the data center and the upper layer determines the procurement and dispatch of electricity. At the lower layer, instead of device-level scheduling in real time, we propose to exploit the inherent flexibility in demand, such as thermostatically controlled loads and flexible computing tasks, and aggregate them into virtual batteries. By this means, the upper-layer decision only needs to take into account these virtual batteries, the size of which is generally small and independent of the data center scale. We further propose an online algorithm based on Lyapunov optimization to purchase electricity from the grid with a manageable energy cost, even though the prices, renewable availability, and battery specifications are uncertain and dynamic. In particular, we show that, under mild conditions, our algorithm can achieve bounded loss compared with the offline optimal cost, while strictly respecting battery operational constraints. Extensive simulation studies validate the theoretical analysis and illustrate the tradeoff between optimality and conservativeness.}
+  }
 
-@article{liu2023federated,
-  abbr={ICML},
-  bibtex_show={true},
-  title={Federated Learning with Privacy-Preserving Multimodal Data},
-  author={刘艺轩 and 陈七 and 周八},
-  journal={International Conference on Machine Learning},
-  volume={202},
-  pages={9876--9888},
-  year={2023},
-  publisher=icml,
-  arxiv={2023.33456},
-  pdf={federated_multimodal.pdf},
-  selected={false},
-  abstract={This work explores federated learning approaches for multimodal data while preserving privacy, enabling collaborative training across distributed clients without sharing sensitive information.}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
