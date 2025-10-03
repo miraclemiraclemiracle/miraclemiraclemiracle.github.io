@@ -25,9 +25,10 @@ latest_posts:
   enabled: false # 首页不显示博客文章
 
 # 访客地图
-clustrmaps:
+mapmyvisitors:
   enabled: true
-  id: "1c1nr" # ClustrMaps widget ID
+  id: "BuD3hvfrlu0gIYsHL6Itd8tgKVZBeW5vWOJUCnFAeDY" # MapMyVisitors widget ID
+  url: "1bzqx" # MapMyVisitors统计页面ID
 ---
 
 ## About Me
