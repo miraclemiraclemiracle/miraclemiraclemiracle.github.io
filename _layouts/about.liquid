@@ -76,17 +76,17 @@ layout: default
     <!-- MapMyVisitors Visitor Map -->
     {% if page.mapmyvisitors and page.mapmyvisitors.enabled %}
       <div class="mapmyvisitors-widget" style="text-align: center; margin: 20px 0;">
-        <div style="display: inline-block; max-width: 120px;">
+        <div style="display: inline-block; width: 150px;">
           <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d={{ page.mapmyvisitors.id }}&cl=ffffff&w=a"></script>
           <noscript>
             <a href="https://mapmyvisitors.com/web/{{ page.mapmyvisitors.url }}" title="Visit tracker">
-              <img src="https://mapmyvisitors.com/map.png?d={{ page.mapmyvisitors.id }}&cl=ffffff" alt="访客地图" style="border:0px; max-width: 120px; height: auto;" />
+              <img src="https://mapmyvisitors.com/map.png?d={{ page.mapmyvisitors.id }}&cl=ffffff" alt="Visitor Map" style="border:0px; width: 100%; height: auto;" />
             </a>
           </noscript>
         </div>
         <p style="font-size: 0.8em; color: #666; margin-top: 5px;">
           <a href="https://mapmyvisitors.com/web/{{ page.mapmyvisitors.url }}" target="_blank" style="text-decoration: none; color: #666;">
-            点击查看详细访客统计
+            Click to view detailed visitor statistics
           </a>
         </p>
       </div>
