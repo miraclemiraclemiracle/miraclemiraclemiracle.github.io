@@ -14,7 +14,7 @@ nav_order: 2
 
 <div class="projects">
   {% assign sorted_projects = site.projects | sort: "importance" %}
-  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-2{% endunless %}">
     {% for project in sorted_projects %}
       {% if project.full_width %}
         <div class="col-12">

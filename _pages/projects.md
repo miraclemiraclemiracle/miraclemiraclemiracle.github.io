@@ -29,7 +29,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-2{% endunless %}">
     {% for project in sorted_projects %}
       {% if project.full_width %}
         <div class="col-12">
@@ -61,7 +61,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-2{% endunless %}">
     {% for project in sorted_projects %}
       {% if project.full_width %}
         <div class="col-12">
