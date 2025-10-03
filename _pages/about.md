@@ -1,17 +1,15 @@
 ---
 layout: about
-title: 关于我
+title: About Me
 permalink: /
-subtitle: 计算机科学与人工智能研究者
+subtitle: Ph.D. Student at PKU
+
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: my_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>办公室：计算机学院 A301</p>
-    <p>地址：北京市海淀区学院路37号</p>
-    <p>邮编：100191</p>
+  more_info: false
 
 selected_papers: false # 根据需求文档，首页不显示selected publications
 social: false # 根据需求文档，移除多余的社交媒体图标
@@ -30,31 +28,32 @@ clustrmaps:
   id: "clustrmaps-widget" # ClustrMaps widget ID
 ---
 
-## 个人简介
+## About Me
 
-欢迎来到我的学术主页！我是刘艺轩，目前专注于[计算机科学](https://en.wikipedia.org/wiki/Computer_science)与[人工智能](https://en.wikipedia.org/wiki/Artificial_intelligence)领域的研究。我的研究兴趣包括机器学习、深度学习、自然语言处理等前沿技术。
+I’m a second-year Ph.D. student in Industrial and Systems Engineering at the School of Advanced Manufacturing and Robotics, Peking University. I am fortunate to be advised by [Prof. Pengcheng You](https://pengcheng-you.github.io/desires-lab/people.html), who leads [DESIRES Lab][https://pengcheng-you.github.io/desires-lab/] at the School of Advanced Manufacturing and Robotics, Peking University. Prior to that, I acquired my Bachelor’s degree majoring in Theoretical and Applied Mechanics（Scientific and Engineering Computation, at the College of Engineering, Peking University. 
 
-我致力于通过创新的算法和模型来解决实际问题，推动人工智能技术在各个领域的应用。在学术研究之外，我也积极参与开源项目，与全球的研究者和开发者分享知识与经验。
+My email is x [at] y [dot] cn (x="yixuanliu2024", y="stu.pku.edu"). Feel free to contact me for any discussions and potential collaborations.
 
-## 研究兴趣
+## Research Interests
+My current research focuses on **control and optimization theory** for the stability and efficiency of modern power systems. Specifically, my work involves the analysis of **[frequency synchronization and stability](https://en.wikipedia.org/wiki/Utility_frequency)**, as well as how these physical-level dynamics can be integrated with **[electricity markets dynamics](https://arxiv.org/abs/2112.05811)**. 
 
-- **机器学习**：监督学习、无监督学习、强化学习
-- **深度学习**：神经网络架构设计、优化算法
-- **自然语言处理**：文本理解、语言生成、对话系统
-- **计算机视觉**：图像识别、目标检测、图像生成
+Additionally, I am also exploring the applications of **Reinforcement Learning** with theoretical guarantees. 
 
-## 教育背景
+<!-- ## Education Background
 
-- **博士学位** - 计算机科学，清华大学 (2020-2024)
-- **硕士学位** - 人工智能，北京大学 (2018-2020)  
-- **学士学位** - 计算机科学与技术，中国科学技术大学 (2014-2018)
+- **Ph.D. in Industrial and Systems Engineering** - Peking University (2020-2024)
+- **M.S. in Artificial Intelligence** - Peking University (2018-2020)  
+- **B.S. in Theoretical and Applied Mechanics** - Peking University (2014-2018) -->
 
-## 联系方式
+<!-- ## Contact
 
 如果您对我的研究感兴趣，或希望进行学术合作，欢迎通过以下方式联系我：
 
 - **邮箱**：liuyixuan@example.com
 - **办公室**：计算机学院 A301
-- **研究方向讨论**：欢迎预约面谈
+- **研究方向讨论**：欢迎预约面谈 -->
 
-我很乐意与同行研究者、学生以及对人工智能感兴趣的朋友们交流学术想法和研究心得。
+<!-- 我很乐意与同行研究者、学生以及对人工智能感兴趣的朋友们交流学术想法和研究心得。 -->
+
+
+<!-- [def]: https://pengcheng-you.github.io/desires-lab/ -->

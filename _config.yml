@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: 刘艺轩的学术主页 # the website title (if blank, full name will be used instead)
-first_name: 刘
+title: <strong>Yixuan</strong> Liu # the website title (if blank, full name will be used instead)
+first_name: Yixuan
 middle_name: 
-last_name: 艺轩
+last_name: Liu
 contact_note: >
-  欢迎通过邮件或社交媒体与我联系，讨论学术合作与交流。
+  Feel free to contact me via email for any discussions and collaborations.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   个人学术主页，展示研究成果、学术背景和最新动态。专注于计算机科学与人工智能领域的研究。
 footer_text: >
