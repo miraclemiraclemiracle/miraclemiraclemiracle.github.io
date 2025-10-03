@@ -29,9 +29,15 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
     {% for project in sorted_projects %}
-      {% include projects.liquid %}
+      {% if project.full_width %}
+        <div class="col-12">
+          {% include projects.liquid %}
+        </div>
+      {% else %}
+        {% include projects.liquid %}
+      {% endif %}
     {% endfor %}
   </div>
   {% endif %}
@@ -55,9 +61,15 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
     {% for project in sorted_projects %}
-      {% include projects.liquid %}
+      {% if project.full_width %}
+        <div class="col-12">
+          {% include projects.liquid %}
+        </div>
+      {% else %}
+        {% include projects.liquid %}
+      {% endif %}
     {% endfor %}
   </div>
   {% endif %}

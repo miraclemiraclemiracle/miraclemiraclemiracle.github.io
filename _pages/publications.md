@@ -9,24 +9,20 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-
-
-## Google Scholar
-
-<p>
-  <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=6DSyKpEAAAAJ" 
-  target="_blank" rel="noopener noreferrer">
-    See the Google Scholar for the full list of my publications.
-  </a>
-</p>
-
-## 研究项目
+## Projects
+<p class="text-muted">Undergraduate research projects</p>
 
 <div class="projects">
   {% assign sorted_projects = site.projects | sort: "importance" %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 {% unless project.full_width %}row-cols-md-3{% endunless %}">
     {% for project in sorted_projects %}
-      {% include projects.liquid %}
+      {% if project.full_width %}
+        <div class="col-12">
+          {% include projects.liquid %}
+        </div>
+      {% else %}
+        {% include projects.liquid %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>
