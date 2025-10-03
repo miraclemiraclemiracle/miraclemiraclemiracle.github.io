@@ -32,7 +32,7 @@ clustrmaps:
 
 ## About Me
 
-I’m a second-year Ph.D. student in **Industrial and Systems Engineering** at the School of Advanced Manufacturing and Robotics, Peking University. I am fortunate to be advised by [Prof. Pengcheng You](https://pengcheng-you.github.io/desires-lab/people.html), who leads [DESIRES Lab](https://pengcheng-you.github.io/desires-lab/) at the School of Advanced Manufacturing and Robotics, Peking University. 
+I’m a second-year Ph.D. student in [Industrial and Systems Engineering](https://www.coe.pku.edu.cn/graduate/10373.html?_isa=1) at the School of Advanced Manufacturing and Robotics, Peking University. I am fortunate to be advised by [Prof. Pengcheng You](https://pengcheng-you.github.io/desires-lab/people.html), who leads [DESIRES Lab](https://pengcheng-you.github.io/desires-lab/) at the School of Advanced Manufacturing and Robotics, Peking University. 
 
 Prior to that, I acquired my Bachelor’s degree majoring in Theoretical and Applied Mechanics (Scientific and Engineering Computation), at the College of Engineering, Peking University. 
 

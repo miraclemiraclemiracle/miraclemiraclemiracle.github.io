@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: 研究与发表
+title: Research & Publications
 description: 研究项目和学术论文展示，按时间倒序排列
 nav: true
 nav_order: 2
@@ -14,7 +14,8 @@ nav_order: 2
 ## Google Scholar
 
 <p>
-  <a href="https://scholar.google.com/citations?user=example_scholar_id" target="_blank" rel="noopener noreferrer">
+  <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=6DSyKpEAAAAJ" 
+  target="_blank" rel="noopener noreferrer">
     See the Google Scholar for the full list of my publications.
   </a>
 </p>
