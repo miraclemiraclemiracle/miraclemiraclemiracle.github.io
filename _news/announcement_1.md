@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-12-15 10:00:00+0800
+date: 2025-9-22 10:00:00+0800
 inline: true
 related_posts: false
 ---
 
-🎉 我的最新论文《基于Transformer的多模态学习方法研究》已被AAAI 2025会议接收！这项工作探索了视觉和文本信息的深度融合机制。
+🎉 Our collaborative work “[Reinforcement learning algorithm for reusable resource allocation with unknown rental time distribution](https://www.sciencedirect.com/science/article/abs/pii/S0377221725007295)” has been accepted for publication in the European Journal of Operational Research!

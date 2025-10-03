@@ -10,6 +10,8 @@ profile:
   image: my_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: false
+  # 在图片下方加一句短文字
+  image_caption: "Beijing, China, Autumn 2024"
 
 selected_papers: false # 根据需求文档，首页不显示selected publications
 social: false # 根据需求文档，移除多余的社交媒体图标
@@ -30,7 +32,9 @@ clustrmaps:
 
 ## About Me
 
-I’m a second-year Ph.D. student in Industrial and Systems Engineering at the School of Advanced Manufacturing and Robotics, Peking University. I am fortunate to be advised by [Prof. Pengcheng You](https://pengcheng-you.github.io/desires-lab/people.html), who leads [DESIRES Lab][https://pengcheng-you.github.io/desires-lab/] at the School of Advanced Manufacturing and Robotics, Peking University. Prior to that, I acquired my Bachelor’s degree majoring in Theoretical and Applied Mechanics（Scientific and Engineering Computation, at the College of Engineering, Peking University. 
+I’m a second-year Ph.D. student in **Industrial and Systems Engineering** at the School of Advanced Manufacturing and Robotics, Peking University. I am fortunate to be advised by [Prof. Pengcheng You](https://pengcheng-you.github.io/desires-lab/people.html), who leads [DESIRES Lab](https://pengcheng-you.github.io/desires-lab/) at the School of Advanced Manufacturing and Robotics, Peking University. 
+
+Prior to that, I acquired my Bachelor’s degree majoring in Theoretical and Applied Mechanics (Scientific and Engineering Computation), at the College of Engineering, Peking University. 
 
 My email is x [at] y [dot] cn (x="yixuanliu2024", y="stu.pku.edu"). Feel free to contact me for any discussions and potential collaborations.
 
