@@ -5,6 +5,7 @@ description: 探索大语言模型的安全风险评估与防护机制，构建�
 img: assets/img/3.jpg
 importance: 2
 category: research
+published: false
 arxiv_url: https://arxiv.org/abs/2024.22345
 pdf_url: /assets/pdf/llm_safety_research.pdf
 github_url: https://github.com/liuyixuan/llm-safety

@@ -5,6 +5,7 @@ description: 基于深度学习的实时目标检测算法研究与优化
 img: assets/img/5.jpg
 importance: 3
 category: collaboration
+published: false
 arxiv_url: https://arxiv.org/abs/2023.98765
 pdf_url: /assets/pdf/object_detection.pdf
 github_url: https://github.com/username/object-detection
