@@ -1,9 +1,22 @@
-require "active_support/all"
+begin
+  require "active_support/all"
+  require "i18n/core_ext/string/interpolate"
+rescue LoadError => e
+  puts "Warning: Could not load required dependencies for Google Scholar citations: #{e.message}"
+  puts "Google Scholar citations will be disabled."
+end
 require 'nokogiri'
 require 'open-uri'
 
 module Helpers
-  extend ActiveSupport::NumberHelper
+  begin
+    extend ActiveSupport::NumberHelper
+  rescue NameError
+    # Fallback if ActiveSupport::NumberHelper is not available
+    def self.number_with_delimiter(number, options = {})
+      number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+    end
+  end
 end
 
 module Jekyll

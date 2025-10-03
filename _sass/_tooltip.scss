@@ -43,7 +43,7 @@
     position: relative;
     
     // Dark mode support
-    @include media-query($on-dark) {
+    @media (prefers-color-scheme: dark) {
       background: var(--global-card-bg-color);
       border-color: var(--global-divider-color);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
