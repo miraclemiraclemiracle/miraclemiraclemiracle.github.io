@@ -1,24 +1,18 @@
 {
   "basics": {
-    "name": "刘艺轩",
-    "label": "计算机科学与人工智能研究者",
-    "image": "prof_pic.jpg",
-    "email": "yixuan.liu@example.edu",
-    "phone": "(010) 123-4567",
-    "url": "https://liuyixuan.github.io/",
-    "summary": "专注于计算机科学与人工智能领域的研究，致力于通过创新的算法和模型来解决实际问题",
-    "location": {
-      "address": "学院路37号",
-      "postalCode": "100191",
-      "city": "北京",
-      "countryCode": "CN",
-      "region": "海淀区"
-    },
+    "name": "Yixuan Liu",
+    "label": "Ph.D. Student at PKU",
+    "image": "my_pic.jpg",
+    "email": "",
+    "phone": "",
+    "url": "https://miraclemiraclemiracle.github.io/",
+    "summary": "aims to work at the intersection of control, optimization and learning in power systems",
+    "location": {},
     "profiles": [
       {
         "network": "GitHub",
-        "username": "liuyixuan",
-        "url": "https://github.com/liuyixuan"
+        "username": "miraclemiraclemiracle",
+        "url": "https://github.com/miraclemiraclemiracle/"
       }
     ]
   },

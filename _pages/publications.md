@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Research & Publications
-description: 研究项目和学术论文展示，按时间倒序排列
+description:
 nav: true
 nav_order: 2
 ---
