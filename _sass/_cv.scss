@@ -114,6 +114,25 @@ div.list-group {
   margin-bottom: 2rem;
 }
 
+/*****************************
+ * Volunteer thumbnail styles
+ *****************************/
+
+.volunteer-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--global-divider-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 td.list-group-category {
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;

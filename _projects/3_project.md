@@ -1,14 +1,15 @@
 ---
 layout: project
-title: 计算机视觉目标检测算法优化
-description: 基于深度学习的实时目标检测算法研究与优化
-img: assets/img/5.jpg
+title: Power load flexibility aggregation and disaggregation
+subtitle: Undergraduate Thesis
+description: 研究和开发一种基于物理模型的电力负荷灵活性聚合和解聚合方法，以优化电力系统的运行效率和资源利用。
+img: assets/img/coherency_video_fast_2.gif
 importance: 3
-category: collaboration
-published: false
-arxiv_url: https://arxiv.org/abs/2023.98765
-pdf_url: /assets/pdf/object_detection.pdf
-github_url: https://github.com/username/object-detection
+category: research
+published: true
+# arxiv_url: https://arxiv.org/abs/2023.98765
+# pdf_url: /assets/pdf/object_detection.pdf
+# github_url: https://github.com/username/object-detection
 ---
 
 ## 项目简介

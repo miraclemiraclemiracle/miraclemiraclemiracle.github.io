@@ -1,11 +1,12 @@
 ---
-layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
-published: false
+layout: project
+title: Reinforcement Learning Algorithm for Reusable Resource Allocation with Unknown Rental Time Distribution
+subtitle: <a href="https://scholar.google.com/citations?user=Pxi6zhoAAAAJ&hl=zh-CN&oi=sra" target="_blank">Ziwei Wang</a>, <a href="https://www.researchgate.net/profile/Jie-Song-61" target="_blank">Jie Song</a>, <strong><u>Yixuan Liu</u></strong>, and <a href="https://scholar.google.com/citations?user=jQz5OHMAAAAJ&hl=zh-CN&oi=sra" target="_blank">Jingtong Zhao</a>
+description: Learning framework for traditional OR algorithms 
+img: assets/img/coherency_video_fast_2.gif
+importance: 5
+category: research
+published: true
 ---
 
 Every project has a beautiful feature showcase page.

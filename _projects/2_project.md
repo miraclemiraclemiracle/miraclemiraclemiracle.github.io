@@ -1,14 +1,14 @@
 ---
 layout: project
-title: 大规模语言模型安全性研究
-description: 探索大语言模型的安全风险评估与防护机制，构建可信AI系统
-img: assets/img/3.jpg
+title: Physics-Driven Electricity Market Dynamics Design and Analysis
+description: Designing a physics-driven electricity market dynamics model to optimize the operation of power grids under various market conditions.
+img: assets/img/coherency_video_fast_2.gif
 importance: 2
 category: research
-published: false
-arxiv_url: https://arxiv.org/abs/2024.22345
-pdf_url: /assets/pdf/llm_safety_research.pdf
-github_url: https://github.com/liuyixuan/llm-safety
+published: true
+# arxiv_url: https://arxiv.org/abs/2024.22345
+# pdf_url: /assets/pdf/llm_safety_research.pdf
+# github_url: https://github.com/liuyixuan/llm-safety
 ---
 
 ## 研究背景

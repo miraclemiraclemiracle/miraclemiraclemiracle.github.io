@@ -1,6 +1,6 @@
 <div class="list-groups">
   {% for content in data[1] %}
-    <div class="list-group col-md-6" title="{{ content.level }}">
+    <div class="list-group col-md-3" title="{{ content.level }}">
       <table class="table-cv list-group-table">
         <tbody>
           <tr>
@@ -22,7 +22,14 @@
             <tr>
               <td></td>
               <td class="list-group-name">
-                <b>{{ item }}</b>
+                {% if item.url %}
+                  <b><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></b>
+                {% elsif item contains '|' %}
+                  {% assign parts = item | split: '|' %}
+                  <b><a href="{{ parts[1] }}" target="_blank">{{ parts[0] }}</a></b>
+                {% else %}
+                  <b>{{ item }}</b>
+                {% endif %}
               </td>
             </tr>
           {% endfor %}

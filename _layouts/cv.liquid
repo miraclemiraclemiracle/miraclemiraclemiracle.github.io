@@ -88,7 +88,15 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            {% if data[0] == 'volunteer' %}
+              <h3 class="card-title font-weight-medium">Working</h3>
+            {% elsif data[0] == 'teaching' %}
+              <h3 class="card-title font-weight-medium">Teaching</h3>
+            {% elsif data[0] == 'skills & activities' %}
+              <h3 class="card-title font-weight-medium">Skills & Activities</h3>
+            {% else %}
+              <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            {% endif %}
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
@@ -99,11 +107,15 @@ layout: default
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}
+                {% when 'teaching' %}
+                  {% include resume/teaching.liquid %}
                 {% when 'projects' %}
                   {% include resume/projects.liquid %}
                 {% when 'awards' %}
                   {% include resume/awards.liquid %}
                 {% when 'skills' %}
+                  {% include resume/skills.liquid %}
+                {% when 'skills & activities' %}
                   {% include resume/skills.liquid %}
                 {% when 'publications' %}
                   {% include resume/publications.liquid %}
