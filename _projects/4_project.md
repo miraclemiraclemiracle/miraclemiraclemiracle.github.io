@@ -2,8 +2,8 @@
 layout: project
 title: Online Electricity Purchase for Data Center with Dynamic Virtual Battery from Flexibility Aggregation
 subtitle: Kekun Gao, Yuejun Yan, <strong><u>Yixuan Liu</u></strong>, and <a href="https://scholar.google.com/citations?user=nKw5MfYAAAAJ&hl=en" target="_blank">Pengcheng You</a>
-description: Online decision framework without any predictions
-img: assets/img/coherency_video_fast_2.gif
+description: A scalable algorithm for the real-time electricity purchase of data centers with mass heterogeneous flexible loads. Guarantee a near-optimal cost and strict satisfaction of operational constraints without relying on any predictions. 
+img: assets/img/publication_preview/homepage_Lyapunov_slower.gif
 importance: 4
 category: research
 published: true

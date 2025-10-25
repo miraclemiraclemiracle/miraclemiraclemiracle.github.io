@@ -6,7 +6,7 @@ description: 研究和开发一种基于物理模型的电力负荷灵活性聚�
 img: assets/img/coherency_video_fast_2.gif
 importance: 3
 category: research
-published: true
+published: false
 # arxiv_url: https://arxiv.org/abs/2023.98765
 # pdf_url: /assets/pdf/object_detection.pdf
 # github_url: https://github.com/username/object-detection

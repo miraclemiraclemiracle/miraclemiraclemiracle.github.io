@@ -62,13 +62,11 @@
       <!-- Expandable Details -->
       <div class="project-expand">
         <button class="btn btn-sm btn-link p-0 expand-btn" type="button" data-toggle="collapse" data-target="#project-{{ project.title | slugify }}" aria-expanded="false">
-          <i class="fa-solid fa-chevron-down"></i> 查看详情
+          <i class="fa-solid fa-chevron-down"></i> View More
         </button>
         <div class="collapse mt-2" id="project-{{ project.title | slugify }}">
           <div class="card card-body">
-            <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="text-decoration-none">
-              <p class="mb-0">More Details...</p>
-            </a>
+            <p class="mb-0">More Details Forthcoming</p>
           </div>
         </div>
       </div>

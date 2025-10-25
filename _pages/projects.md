@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 研究项目
+title: Projects
 permalink: /projects/
-description: 我的研究项目和学术成果展示
-nav: false # 根据需求文档，项目页面合并到研究与发表页面
+description: A growing collection of your cool projects.
+nav: false
 nav_order: 3
 display_categories: [research, collaboration]
 horizontal: false

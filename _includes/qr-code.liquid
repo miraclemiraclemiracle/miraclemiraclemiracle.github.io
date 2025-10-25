@@ -1,0 +1,28 @@
+<div class="qr-code-container text-center my-4">
+  <h4>扫码访问网站</h4>
+  <div id="qr-code" class="d-inline-block"></div>
+  <p class="mt-2 text-muted">扫描二维码快速访问本网站</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const qrContainer = document.getElementById('qr-code');
+    const currentUrl = window.location.origin;
+    
+    QRCode.toCanvas(qrContainer, currentUrl, {
+      width: 200,
+      height: 200,
+      margin: 2,
+      color: {
+        dark: '#000000',
+        light: '#FFFFFF'
+      }
+    }, function (error) {
+      if (error) {
+        console.error('QR Code generation failed:', error);
+        qrContainer.innerHTML = '<p class="text-danger">二维码生成失败</p>';
+      }
+    });
+  });
+</script>

@@ -1,8 +1,10 @@
 ---
 layout: project
-title: Physics-Driven Electricity Market Dynamics Design and Analysis
-description: Designing a physics-driven electricity market dynamics model to optimize the operation of power grids under various market conditions.
-img: assets/img/coherency_video_fast_2.gif
+title: Robust Design and Analysis of Physics-Driven Electricity Market Dynamics 
+subtitle: Ongoing project
+description: Characterize the evolution of electricity markets using a dynamic system, with toolkits from control theory. Such perspective enables us to unify the grid's physical dynamics (e.g., frequency regulation) and its economic dispatch on the same timescale. Further considering the unpredictable and complex behaviors of real-world generators, we aim to use robust control to develop robust market mechanisms.
+ 
+img: assets/img/market dynamics.png
 importance: 2
 category: research
 published: true

@@ -42,7 +42,7 @@ My email is x [at] y [dot] cn (x="yixuanliu2024", y="stu.pku.edu"). Feel free to
 ## Research Interests
 My current research focuses on **control and optimization theory** for the stability and efficiency of modern power systems. Specifically, my work involves the analysis of **[frequency synchronization and stability](https://en.wikipedia.org/wiki/Utility_frequency)**, as well as how these physical-level dynamics can be integrated with **[electricity markets dynamics](https://arxiv.org/abs/2112.05811)**. 
 
-Additionally, I am also exploring the applications of **Reinforcement Learning** with theoretical guarantees. 
+Additionally, I am also interested in **Reinforcement Learning** applications that provide theoretical guarantees by integrating RL with advanced control and optimization methodologies. 
 
 <!-- ## Education Background
 
