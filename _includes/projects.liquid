@@ -66,7 +66,11 @@
         </button>
         <div class="collapse mt-2" id="project-{{ project.title | slugify }}">
           <div class="card card-body">
-            <p class="mb-0">More Details Forthcoming</p>
+            {% if project.details_url %}
+              <a href="{{ project.details_url }}" target="_blank" rel="noopener noreferrer">More Details</a>
+            {% else %}
+              <p class="mb-0">More Details Forthcoming</p>
+            {% endif %}
           </div>
         </div>
       </div>

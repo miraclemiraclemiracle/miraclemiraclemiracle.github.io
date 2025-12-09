@@ -2,18 +2,26 @@
 ---
 
 @string{EJOR = {European Journal of Operational Research}}
-@string{YAC = {Youth Academic Annual Conference of Chinese Association of Automation}}
+@string{e-Energy = {Proceedings of The 17th ACM International Conference on Future
+and Sustainable Energy Systems}}
 
-
-@article{liu2025coherency,
-  bibtex_show={false},
-  title={Coherency Analysis in Nonlinear Heterogeneous Power Networks},
+@INPROCEEDINGS{liu2025coherency,
+  abbr = {e-Energy},
+  preview = {homepage_pub_coherency.png},
+  bibtex_show={true},
   author={Yixuan Liu and Yingzhu Liu and Pengcheng You},
-  year={2025},
-  selected={true},
-  journal = {Under Review},
-  preview={homepage_pub_coherency.png}
-}
+  booktitle={Proceedings of The 17th ACM International Conference on Future
+and Sustainable Energy Systems (e-Energy ’26). ACM, New York, NY, USA}, 
+  title={Coherency Analysis in Nonlinear Heterogeneous Power Networks: A Blended Dynamics Approach}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={},
+  pdf = {coherency_arxiv.pdf},
+  poster = {Poster_Coherency_Analysis_1209.pdf},
+  selected = {true},
+  abstract = {Power system coherency refers to the phenomenon that machines in a power network exhibit similar frequency responses after disturbances, and is foundational for model reduction and control design. Despite abundant empirical observations, the understanding of coherence in complex power networks remains incomplete where the dynamics could be highly heterogeneous, nonlinear, and increasingly affected by persistent disturbances such as renewable energy fluctuations. To bridge this gap, this paper extends the blended dynamics approach, originally rooted in consensus analysis of multi-agent systems, to develop a novel coherency analysis in power networks. We show that the frequency responses of coherent machines coupled by nonlinear power flow can be approximately represented by the blended dynamics, which is a weighted average of nonlinear heterogeneous nodal dynamics, even under time-varying disturbances. Specifically, by developing novel bounds on the difference between the trajectories of nodal dynamics and the blended dynamics, we identify two key factors -- either high network connectivity or small time-variation rate of disturbances -- that contribute to coherence. They enable the nodal frequencies to rapidly approach the blended-dynamics trajectory from arbitrary initial state. Furthermore, they ensure the frequencies closely follow this trajectory in the long term, even when the system does not settle to an equilibrium. These insights contribute to the understanding of power system coherency and are further supported by simulation results. }
+  }
 
 @article{WANG2025,
 abbr={EJOR},
@@ -49,4 +57,3 @@ abstract = {We explore a scenario where a platform must decide on the price and 
   doi={10.1109/YAC63405.2024.10598509},
   abstract = {As a critical component of modern infrastructure, data centers account for a huge amount of power consumption and greenhouse gas emission. This paper studies the electricity purchase strategy for a data center to lower its energy cost while integrating local renewable generation under uncertainty. To facilitate efficient and scalable decision-making, we propose a two-layer hierarchy where the lower layer consists of the operation of all electrical equipment in the data center and the upper layer determines the procurement and dispatch of electricity. At the lower layer, instead of device-level scheduling in real time, we propose to exploit the inherent flexibility in demand, such as thermostatically controlled loads and flexible computing tasks, and aggregate them into virtual batteries. By this means, the upper-layer decision only needs to take into account these virtual batteries, the size of which is generally small and independent of the data center scale. We further propose an online algorithm based on Lyapunov optimization to purchase electricity from the grid with a manageable energy cost, even though the prices, renewable availability, and battery specifications are uncertain and dynamic. In particular, we show that, under mild conditions, our algorithm can achieve bounded loss compared with the offline optimal cost, while strictly respecting battery operational constraints. Extensive simulation studies validate the theoretical analysis and illustrate the tradeoff between optimality and conservativeness.}
   }
-

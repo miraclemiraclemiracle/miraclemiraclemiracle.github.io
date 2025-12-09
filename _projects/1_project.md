@@ -1,12 +1,13 @@
 ---
 layout: project
-title: Coherency Analysis in Nonlinear Heterogeneous Power Networks
+title: Coherency Analysis in Nonlinear Heterogeneous Power Networks—A Blended Dynamics Approach
 subtitle: <strong><u>Yixuan Liu</u></strong>, <a href="https://yingzhu-liu-star.github.io/" target="_blank">Yingzhu Liu</a>, and <a href="https://scholar.google.com/citations?user=nKw5MfYAAAAJ&hl=en" target="_blank">Pengcheng You</a>
 description: A novel theoretical analysis of <span class="clickable-term" data-title="Power System Coherency" data-definition="Power system coherency refers to the phenomenon where groups of generators in a power network exhibit similar frequency responses to disturbances, maintaining nearly synchronized operation. This phenomenon enables us to aggregate all coherent generators into a single effective generator, simplifying large-scale power system analysis while preserving the dominant dynamics.">power system coherency</span>. Reveals the key mechanisms underpinning this phenomenon, laying foundations for <span class="clickable-term" data-title="Model Reduction" data-definition="Model reduction is a technique for simplifying large-scale system models. It approximates a high-fidelity, full-order system with a much smaller, lower-order model that captures its key dynamic behaviors. This approach enables significantly faster simulations and facilitates more efficient control and optimization design.">model reduction</span> and further control design. (<a href="https://hanchmin.github.io/" target="_blank">source of figure</a>)
 img: assets/img/coherency_video_fast_2.gif
 importance: 1        # 控制项目在作品集页面中的排序，数值越大越靠前
 category: research  # 指定项目所属分类，用于作品集页面的分组展示
 full_width: true    # 设置为全宽度显示
+details_url: https://miraclemiraclemiracle.github.io/
 # arxiv_url: https://arxiv.org/abs/2024.11234
 # pdf_url: /assets/pdf/transformer_multimodal.pdf
 # github_url: https://github.com/liuyixuan/transformer-multimodal
