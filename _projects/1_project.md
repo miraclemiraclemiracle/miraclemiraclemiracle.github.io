@@ -7,7 +7,7 @@ img: assets/img/coherency_video_fast_2.gif
 importance: 1        # 控制项目在作品集页面中的排序，数值越大越靠前
 category: research  # 指定项目所属分类，用于作品集页面的分组展示
 full_width: true    # 设置为全宽度显示
-details_url: https://miraclemiraclemiracle.github.io/
+details_url: https://www.linkedin.com/feed/update/urn:li:activity:7404094509162356736/
 # arxiv_url: https://arxiv.org/abs/2024.11234
 # pdf_url: /assets/pdf/transformer_multimodal.pdf
 # github_url: https://github.com/liuyixuan/transformer-multimodal
