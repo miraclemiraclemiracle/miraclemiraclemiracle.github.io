@@ -11,3 +11,15 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# LaTeX (local CV build artifacts)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Ignore root-level LaTeX sources/outputs only (avoid ignoring published PDFs in assets/pdf/)
+/main.tex
+/main.pdf
